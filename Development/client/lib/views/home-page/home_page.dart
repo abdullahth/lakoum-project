@@ -1,4 +1,6 @@
 import 'package:auto_size_text_pk/auto_size_text_pk.dart';
+import 'package:client/views/global_widgets/search_bar/search_bar.dart';
+import 'package:client/views/home-page/components/inner_pages/fashion_page/fashion_page.dart';
 import 'package:get/get.dart';
 import 'package:client/preferences/enums/icons.dart';
 import 'package:client/preferences/enums/images.dart';
@@ -10,16 +12,15 @@ import 'components/app_bar/app_bar.dart';
 import 'components/horizontal_banner/horizontal_banner.dart';
 import 'components/category_card/category_card.dart';
 import 'components/entry_banner/entry_banner.dart';
-import 'components/search_bar/search_bar.dart';
 
-class HomrPage extends StatefulWidget {
-  const HomrPage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  _HomrPageState createState() => _HomrPageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _HomrPageState extends State<HomrPage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final dims = DevicesDimsConfig(context);
@@ -30,7 +31,7 @@ class _HomrPageState extends State<HomrPage> {
           physics: const BouncingScrollPhysics(),
           children: [
             const CustomAppBar(),
-            HomePageSearchBar(searchCallback: (searchToken) {}),
+            ConstantSearchTextField(searchCallback: (searchToken) {}),
             const HomePageBanner(),
             Container(
               width: dims.deviceWidth,
@@ -68,7 +69,7 @@ class _HomrPageState extends State<HomrPage> {
                     child: CategoryGridCard(
                       title: 'fashion'.tr,
                       onTap: () {
-                        // TODO
+                        Get.to(const FashionCategoryInnerPage());
                       },
                       image: AppImages.homePageFashionCategory,
                     ),
@@ -139,7 +140,7 @@ class _HomrPageState extends State<HomrPage> {
                       onTap: () {
                         // TODO
                       },
-                      image: AppImages.homrPageCoffeeEquipmentCategory,
+                      image: AppImages.homePageCoffeeEquipmentCategory,
                     ),
                   )
                 ],
