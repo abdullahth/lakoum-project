@@ -20,7 +20,9 @@ class HorizontalBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final dims = DevicesDimsConfig(context);
     return InkWell(
-      onTap: onTap(),
+      onTap: () {
+        onTap();
+      },
       child: ResponsivePadding(
         padding:
             SymetricPadding(context: context, horizontal: 12, vertical: 12),

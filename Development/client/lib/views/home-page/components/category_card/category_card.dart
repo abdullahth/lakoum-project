@@ -18,7 +18,9 @@ class CategoryGridCard extends StatelessWidget {
     final dims = DevicesDimsConfig(context);
     final theme = Theme.of(context);
     return InkWell(
-      onTap: onTap(),
+      onTap: () {
+        onTap();
+        },
       child: ResponsivePadding(
         padding: SymetricPadding(context: context, horizontal: 12, vertical: 8),
         child: Container(
