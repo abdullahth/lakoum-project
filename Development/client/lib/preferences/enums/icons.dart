@@ -10,7 +10,11 @@ enum AppIcons {
   homePageNotificationIcon,
   homePageDeliveryIcon,
   homePageSearchIcon,
+  homePageCartIcon,
 
+  whiteCartIcon,
+  whiteNotificationIcon, 
+  whiteSearchIcon, 
 }
 
 extension AppIconsExt on AppIcons {
@@ -37,6 +41,15 @@ extension AppIconsExt on AppIcons {
         return 'assets/icons/delivery.png';
       case AppIcons.homePageSearchIcon:
         return 'assets/icons/search.png';
+      case AppIcons.homePageCartIcon:
+        return 'assets/icons/cart.png';
+
+      case AppIcons.whiteCartIcon:
+        return 'assets/icons/cart-white.png';
+      case AppIcons.whiteNotificationIcon:
+        return 'assets/icons/notification-white.png';
+      case AppIcons.whiteSearchIcon:
+        return 'assets/icons/search-white.png';
     }
   }
 }

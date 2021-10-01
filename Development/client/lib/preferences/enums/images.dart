@@ -9,7 +9,7 @@ enum AppImages {
 
   // Home Page Categories Images
   homePageBooksCategory,
-  homrPageCoffeeEquipmentCategory, 
+  homePageCoffeeEquipmentCategory,
   homePageCosmaticsCategory,
   homePageDecorationCategory,
   homePageElctronicsCategory,
@@ -20,13 +20,14 @@ enum AppImages {
   homePagePetCategory,
   homePageToysCategory,
   homePageTravelCategory,
+  homePageHomeAndKitchenCategory,
 
   // Fasion Category Page's Categories
   fasionPageBoys,
   fashionPageGirls,
   fasionPageMen,
-  fasionPageSale, 
-  fasionPageTrends, 
+  fasionPageSale,
+  fasionPageTrends,
   fasionPageWomen,
 }
 
@@ -47,7 +48,7 @@ extension AppImagesExt on AppImages {
 
       case AppImages.homePageBooksCategory:
         return 'assets/images/home-page-books-category.png';
-      case AppImages.homrPageCoffeeEquipmentCategory:
+      case AppImages.homePageCoffeeEquipmentCategory:
         return 'assets/images/home-page-coffee-equipment-category.png';
       case AppImages.homePageCosmaticsCategory:
         return 'assets/images/home-page-cosmatics-category.png';
@@ -58,7 +59,7 @@ extension AppImagesExt on AppImages {
       case AppImages.homePageExerciseCategory:
         return 'assets/images/home-page-exercise-category.png';
       case AppImages.homePageFashionCategory:
-        return 'assets/images/home-page-fasion-category.png';
+        return 'assets/images/home-page-fashion-category.png';
       case AppImages.homePageFragranceCategory:
         return 'assets/images/home-page-fragrance-category.png';
       case AppImages.homePageHealthAndCareCategory:
@@ -69,6 +70,8 @@ extension AppImagesExt on AppImages {
         return 'assets/images/home-page-toys-category.png';
       case AppImages.homePageTravelCategory:
         return 'assets/images/home-page-travel-category.png';
+      case AppImages.homePageHomeAndKitchenCategory:
+        return 'assets/images/home-page-home-and-kitchen-category.png';
 
       case AppImages.fasionPageBoys:
         return 'assets/images/fasion-page-boys.png';
