@@ -1,7 +1,6 @@
 import 'package:auto_size_text_pk/auto_size_text_pk.dart';
 import 'package:client/preferences/enums/images.dart';
 import 'package:client/preferences/enums/icons.dart';
-import 'package:client/preferences/router.dart';
 import 'package:client/views/auth_views/sign_up_page/sign_up_page.dart';
 import 'package:client/views/auth_views/widgets/text_form_field/text_form_field.dart';
 import 'package:dims_config/dims_config.dart';
@@ -303,7 +302,7 @@ class _LoginPageState extends State<LoginPage> {
                                     ),
                                     TextButton(
                                       onPressed: () {
-                                        Get.toNamed(AppRouter.signUpRoute);
+                                        Get.to(const SignUpPage());
                                       },
                                       child: Material(
                                         color: Colors.transparent,

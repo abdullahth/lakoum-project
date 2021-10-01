@@ -1,7 +1,6 @@
 import 'package:auto_size_text_pk/auto_size_text_pk.dart';
 import 'package:client/preferences/enums/images.dart';
 import 'package:client/preferences/enums/icons.dart';
-import 'package:client/preferences/router.dart';
 import 'package:client/views/auth_views/login_page/components/forget_password_sliding_sheet.dart';
 import 'package:client/views/auth_views/mobile_verfication/mobile_verification.dart';
 import 'package:client/views/auth_views/widgets/text_form_field/text_form_field.dart';
@@ -144,8 +143,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                 color: theme.colorScheme.primaryVariant,
                                 child: TextButton(
                                   onPressed: () {
-                                    Get.toNamed(
-                                        AppRouter.mobileVerificationRoute);
+                                    Get.to(const MobileVericationPage());
                                   },
                                   child: Material(
                                     color: theme.colorScheme.primaryVariant,
